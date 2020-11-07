@@ -11,9 +11,20 @@ import com.yippie.gritinnovation.ui.model.Result
 class MovieItem (val list: ArrayList<Result>): RecyclerView.Adapter<MovieItem.MyViewHolder>()  {
 
 
+    val c=100
+
+    fun cal(a:Int,b:Int)=a*b
+
+    fun sum(a:Int,b:Int):Int{
+        return a+b
+    }
+
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.activity_movie_details, parent, false)
+
+        val cc=cal(12,23)
+        val value=sum(100,230)
         return MyViewHolder(view)
     }
 

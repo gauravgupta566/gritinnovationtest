@@ -21,6 +21,13 @@ class MainActivity : AppCompatActivity(), GetDataContract.View {
     lateinit var linearLayoutManager: LinearLayoutManager
     lateinit var movieItemAdapter:MovieItem
 
+    override fun onRestart() {
+        super.onRestart()
+    }
+
+    override fun onResume() {
+        super.onResume()
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
